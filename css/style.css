@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+    text-transform: uppercase;
+}
+a:hover {
+    color: hsl(270, 9%, 17%);
+}
+body {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+button {
+    text-transform: uppercase;
+}
+/* Bootstrap utilities */
+.container,
+.row {
+    height: inherit;
+}
+.btn-ouline-light {
+    border: 1px solid hsl(270, 9%, 17%);
+}
+.diff_row {
+    margin-top: 15rem;
+}
+/* Navbar */
+.navbar {
+    z-index: 99;
+}
+/* header */
+#main-header {
+    height: 85vh;
+    background-color: hsl(256, 26%, 20%);
+}
+#main-header .container,
+#main-header .row {
+    height: inherit;
+}
+#main-header h1{
+    color: hsl(0, 0%, 98%);
+    font-size: 6rem;
+}
+.img-mobile {
+    display: none;
+}
+.humanizing h1{
+    color: hsl(0, 0%, 98%);
+}
+.humanizing p {
+    color: white;
+}
+.line {
+    margin-top: 7rem;
+}
+.pattern-right{
+    width: 460px;
+    left: 70%;
+    top: -15%;
+}
+.pattern-left {
+    width: 180px;
+    top: 60%;
+}
+
+/* different_section style */
+#different_section .diff_row img{
+    width: 20%;
+}
+
+/* How_we-work style */
+#how_we_work {
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+#how_we_work .container {
+    background-color: hsl(256, 26%, 20%);
+}
+#how_we_work .container h1 {
+    color: hsl(0, 0%, 98%);
+    font-size: 3.3rem;
+}
+
+/* footer style */
+#main_footer {
+    background: hsl(0, 0%, 98%);
+}
+#main_footer h5 {
+    color: hsl(273, 4%, 51%);
+    text-transform: uppercase;
+}
+#main_footer ul li {
+    line-height: 2rem;
+}
+#main_footer ul li a {
+    color: hsl(270, 9%, 17%);
+}
+.pull_left {
+    float: left;
+}
+.pull_right {
+    float: right;
+}
+
+/* Media Queries */
+@media (max-width: 768px){
+    .container,
+    .row {
+        height: inherit;
+    }
+    /* header style */
+    #main-header {
+        height: 100vh;
+    }
+    #main-header .img-desk {
+        display: none;
+    }
+    #main-header .img-mobile {
+        display: block;
+        top: 0;
+        bottom: 50%;
+    }
+    #main-header h1 {
+        font-size: 4rem;
+    }
+    .line {
+        display: none;
+    }
+    .humanizing {
+        top: 55%;
+    }
+    .pattern-left,
+    .pattern-right {
+        display: none;
+    }
+    .diff_row {
+        margin-top: 10rem;
+    }
+
+
+    /* different_section style */
+    #different_section .diff_row h1 {
+        font-size: 4rem;
+    }
+
+
+    /* how_we_work  */
+    #how_we_work .container h1 {
+        color: hsl(0, 0%, 98%);
+        font-size: 4rem;
+    }
+}
